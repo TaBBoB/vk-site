@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Учебный проект-реплика социальной сети ВКонтакте. Профиль пользователя.">
+    <meta name="keywords" content="ВКонтакте, VK, социальная сеть, профиль, разработка, HTML, CSS">
+    <title>Дмитрий Иванов (ВКонтакте)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="vk-header">
+        <div class="header-container">
+            <div class="logo">VK</div>
+            <input type="text" class="search-bar" placeholder="Поиск">
+            <div class="header-profile">Профиль</div>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <aside class="left-menu">
+            <ul>
+                <li class="active">Моя Страница</li>
+                <li>Новости</li>
+                <li>Мессенджер</li>
+                <li>Друзья</li>
+                <li>Сообщества</li>
+                <li>Фотографии</li>
+                <li>Музыка</li>
+            </ul>
+        </aside>
+
+        <main class="profile-content">
+
+            <section class="profile-card">
+                <div class="avatar-block">
+                    <img src="avatar.jpg" alt="Фото профиля" class="user-avatar">
+                    <button class="btn-edit">Редактировать профиль</button>
+                </div>
+                <div class="info-block">
+                    <h1 class="user-name">Дмитрий Иванов <span class="online-status">онлайн</span></h1>
+                    <p class="user-status">Изучаю веб-разработку и пишу курсовую работу! 💻</p>
+                    <hr>
+                    <div class="details">
+                        <div class="row"><span class="label">День рождения:</span> <span class="val">19 мая 2005 г.</span></div>
+                        <div class="row"><span class="label">Город:</span> <span class="val">Москва</span></div>
+                        <div class="row"><span class="label">Место учебы:</span> <span class="val">Университет</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="create-post">
+                <input type="text" placeholder="Что у Вас нового?">
+                <button class="btn-post">Опубликовать</button>
+            </section>
+
+            <section class="feed">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="avatar.jpg" alt="Мини-аватар" class="mini-avatar">
+                        <div>
+                            <span class="post-author">Дмитрий Иванов</span>
+                            <span class="post-date">Сегодня в 12:00</span>
+                        </div>
+                    </div>
+                    <div class="post-body">
+                        <p>Ура! Мой первый сверстанный интерфейс для курсовой работы по теме "ВКонтакте" готов. Как вам дизайн?</p>
+                    </div>
+                    <div class="post-footer">
+                        <span class="like-btn">❤️ 42</span>
+                        <span class="comment-btn">💬 5</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
